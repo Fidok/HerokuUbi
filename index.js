@@ -273,10 +273,8 @@ router.delete('/users/:userid/musics/:musicid', function(req, res) {
     }
 });
 
-
-if (process.env.NODE_ENV === 'production') {
     app.use(express.static('dist'));
-}
+
 // more routes for our API will happen here
 
 // REGISTER OUR ROUTES -------------------------------
